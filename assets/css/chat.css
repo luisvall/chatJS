@@ -241,3 +241,9 @@
 .Dropdown--isActive{
     display: flex;
 }
+
+
+.notSeen{
+    font-weight: bold;
+    color: mediumpurple;
+}
