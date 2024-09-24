@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Rebis</title>
+    <link rel="shortcut icon" href="assets/img/fabicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2eb60ae895.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/chat.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+
+
+</head>
+<body>
+    <nav class="NavBar">
+        <div class="u-container">
+            <div class="NavBar-icons">
+                <i class="NavBar-icon fas fa-chevron-left" id="back"></i>
+                <a href="index.html">                <img src="assets/img/fabicon.svg" alt="Logo Rebis" class="NavBar-icon"></a>
+                <i class="NavBar-icon fas fa-bars" id="menu"></i>
+            </div>
+            <ul class="NavBar-ul" id="navBar">
+                <li class="NavBar-li"><a href="index.html">Home</a></li>
+                <li class="NavBar-li"><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li class="NavBar-li"><a href="manuales.html">Manuales y tutoriales</a></li>
+                <li class="NavBar-li"><a href="noticias.html">Noticias</a></li>
+                <li class="NavBar-li"><a href="calendario.html">Calendario</a></li>
+                <li class="NavBar-li"><a href="perfil.html">Mi perfil</a></li>
+                <li class="NavBar-li"><a href="organigrama.html">Organigrama</a></li>
+                <li class="NavBar-li"><a href="chat.html">Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Sección principal de chat -->
+    <main class="Chat">
+        <section class="ChatSearch">
+            <label for="buscador" class="ChatSearch-label">Buscar</label>
+                <span></span>
+                <input class="ChatSearch-input" name="buscador" type="text" placeholder="Buscar conversaciones...">
+
+        </section>
+
+        <section class="ChatHistory" id="ChatHistory">
+            <article class="ChatHistory-item --isLast --isChatActive">
+                <div class="ChatHistory-item-imgProfile">
+                    <img src="assets/img/profileOne.jpg" alt="Imagen de perfil" class="GeneralProfile">
+                </div>
+                <div class="ChatHistory-item-content">
+                    <p class="ChatHistory-item-content-name--isNotSeen">Luis Vallejos</p>
+                    <div class="ChatHistory-item-content-message">
+                        <span class="ChatHistory-item-content-message-icon--isNotSeen"><i class="fas fa-check"></i></span>
+                        <span class="ChatHistory-item-content-message-txt--isNotSeen">Este es el mensaje más reciente</span>
+                    </div>
+                </div>
+                <div class="ChatHistory-item-time--today"><span id="spanDate">hoy</span></div>
+            </article>
+            <article class="ChatHistory-item --isLast">
+                <div class="ChatHistory-item-imgProfile">
+                    <img src="assets/img/profileOne.jpg" alt="Imagen de perfil" class="GeneralProfile">
+                </div>
+                <div class="ChatHistory-item-content">
+                    <p class="ChatHistory-item-content-name--isNotSeen">Luis Vallejos</p>
+                    <div class="ChatHistory-item-content-message">
+                        <span class="ChatHistory-item-content-message-icon--isNotSeen"><i class="fas fa-check"></i></span>
+                        <span class="ChatHistory-item-content-message-txt--isNotSeen">Este es el mensaje más reciente</span>
+                    </div>
+                </div>
+                <div class="ChatHistory-item-time--today"><span id="spanDate">hoy</span></div>
+            </article>
+            <article class="ChatHistory-item --isLast">
+                <div class="ChatHistory-item-imgProfile">
+                    <img src="assets/img/profileOne.jpg" alt="Imagen de perfil" class="GeneralProfile">
+                </div>
+                <div class="ChatHistory-item-content">
+                    <p class="ChatHistory-item-content-name--isNotSeen">Luis Vallejos</p>
+                    <div class="ChatHistory-item-content-message">
+                        <span class="ChatHistory-item-content-message-icon--isNotSeen"><i class="fas fa-check"></i></span>
+                        <span class="ChatHistory-item-content-message-txt--isNotSeen">Este es el mensaje más reciente</span>
+                    </div>
+                </div>
+                <div class="ChatHistory-item-time--today"><span id="spanDate">hoy</span></div>
+            </article>
+            <a class="ChatHistory-colapse">Ver chats más chats</a>
+        </section>
+
+        <section class="ChatBody">
+
+            <article class="ChatBody-profile" id="chatProfile">
+                <img src="assets/img/profileOne.jpg" alt="Foto de perfil en el chat" class="ChatBody-profile-img GeneralProfile">
+                <p class="ChatBody-profile-chatName">Luis Vallejos</p>
+                <button id="showContacts">Contactos</button>
+            </article>
+
+            <article class="ChatBody-chatWindow" id="chatWindow">
+
+            </article>
+
+
+            <article class="ChatBody-writeSpace">
+                <button class="ChatBody-writeSpace-attach" id="btnAttach"><i class="fas fa-paperclip" title="Adjuntar archivo"></i>
+                    <div class="Dropdown" id="Dropdown"><ul class="Dropdown-ul">
+                        <li class="Dropdown-li" id="Dropdown-img">Imagenes</li>
+                        <li class="Dropdown-li" id="Dropdown-vid">Videos</li>
+                        <li class="Dropdown-li" id="Dropdown-doc">Documento</li>
+                    </ul></div>
+                </button>
+                <input type="text" placeholder="Mensaje...">
+                <button class="ChatBody-writeSpace-send" onclick="()=>{setID()}"><i class="fas fa-paper-plane"></i></button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <br>
+
+<script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
