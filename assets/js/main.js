@@ -50,7 +50,7 @@ function backArrow (){
 function contactList () {
     let historyItems = []
     for (let i=0; i<ncontact; i++){
-        historyItems[i] = `<article class="ChatHistory-item --isLast" id="${contacts[i].id}">
+        historyItems[i] = `<article class="ChatHistory-item ${contacts[i].isSeen ? '': 'notSeen'}" id="${contacts[i].id}">
                 <div class="ChatHistory-item-imgProfile">
                     <img src="${contacts[i].img}" alt="Imagen de perfil" class="GeneralProfile">
                 </div>
@@ -133,7 +133,6 @@ function setID() {
     chatHistory.childNodes.forEach((element)=>{
         element.addEventListener('click', (e)=>{
 
-
     /*Se deben eliminar todas las clases activas de los contactos*/
         for (let i=0; i<ncontact ;i++){
             chatHistory.childNodes[i].classList.remove('active');
@@ -148,6 +147,7 @@ function setID() {
         idActual = parseInt(element.id);
         chatWindow.innerHTML = mensajesDelChat(idActual)
         chatProfile.innerHTML = perfilDelChat(idActual)
+        element.classList.remove('notSeen')
         })
     })
 }

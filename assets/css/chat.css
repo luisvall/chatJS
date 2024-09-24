@@ -243,7 +243,7 @@
 }
 
 
-.notSeen{
+.notSeen .ChatHistory-item-content-name{
     font-weight: bold;
     color: mediumpurple;
 }
