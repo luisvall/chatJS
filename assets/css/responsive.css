@@ -9,6 +9,7 @@
         margin: auto;
     }
     .NavBar-ul{
+        display: flex;
         flex-direction: row;
         gap: 8px;
     }
