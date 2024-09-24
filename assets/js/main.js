@@ -105,6 +105,8 @@ function mensajesDelChat(n){
     }
 
 
+    
+
     function perfilDelChat (n){
         /*Acá debo traer la bbdd de cotactos y buscar en el array los objetos que tengan un idId igual al idActual*/
         const perfil = contacts.filter( item => (item.id == n) );
